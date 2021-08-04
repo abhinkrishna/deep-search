@@ -78,9 +78,9 @@ if __name__ == "__main__":
         print("Searching for '{}'".format(keyword))
         key.close()
     except:
+        print('creating deep_scan_keyword.ini...')
         f = open(key_file, 'w')
         f.close()
-        print('deep_scan_keyword.ini not available [now created recommended using it]')
         keyword = input('Enter keyword directly : ')
 
     # used to calculate total execution time
